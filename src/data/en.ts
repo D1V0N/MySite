@@ -1,0 +1,225 @@
+import type { SiteContent } from './types';
+
+export const en: SiteContent = {
+  profileLocation: 'Moscow, Russia',
+  education: [
+    {
+      degree: "Bachelor's Degree",
+      school: 'MIREA — Russian Technological University',
+      department: 'Institute of Information Technology, Software Engineering',
+    },
+    {
+      degree: "Master's Degree",
+      school: 'MIREA — Russian Technological University',
+      department:
+        'Institute of Cybersecurity and Digital Technologies, Information Systems and Technology',
+    },
+  ],
+  languages: [{ name: 'English', level: 'B2' }],
+  projects: [
+    {
+      name: 'teamspace',
+      desc: 'Team web platform on Node.js + Express: task management with multiple assignees, knowledge base with Markdown and article versioning, session auth, full action logging.',
+      tags: 'Node.js · Express',
+      lang: 'JavaScript',
+    },
+    {
+      name: 'directum-ad-sync',
+      desc: 'C# module for automatic Directum–Active Directory synchronization: pulls data over LDAP daily, parses attributes, creates employee records.',
+      tags: 'LDAP · Directum',
+      lang: 'C#',
+    },
+    {
+      name: '1c-ad-sync',
+      desc: 'Python tool syncing 1C and Active Directory: LDAP connection, parsing of 1C XLS exports, attribute matching, automatic account updates.',
+      tags: 'LDAP · 1C',
+      lang: 'Python',
+    },
+  ],
+  ui: {
+    nav: {
+      about: 'About',
+      experience: 'Experience',
+      skills: 'Skills',
+      projects: 'Projects',
+      contact: 'Contact',
+    },
+    meta: {
+      title: 'Dmitry Marakulin — Systems Analyst & Full-Stack Developer',
+      description:
+        'Dmitry Marakulin — Systems Analyst and Full-Stack Developer. Requirements, business processes, and the enterprise systems that run them.',
+    },
+    themeToggle: {
+      toLight: 'Switch to light theme',
+      toDark: 'Switch to dark theme',
+    },
+    languageToggle: {
+      ariaLabel: 'Site language',
+    },
+    hero: {
+      eyebrow: "Hi, I'm Dmitry Marakulin",
+      downloadPrefix: 'Download ',
+      contactCta: 'Get in touch',
+    },
+    about: {
+      kicker: 'About',
+      title: 'Who I am',
+    },
+    highlights: {
+      kicker: 'Highlights',
+      title: 'Achievements that stand out',
+    },
+    experience: {
+      kicker: 'Experience',
+      title: "Where I've been putting this to work",
+    },
+    skills: {
+      kicker: 'Skills',
+      title: 'Tools and capabilities',
+      stack: 'Stack',
+      core: 'Core skills',
+    },
+    education: {
+      kicker: 'Education',
+      title: 'University & languages',
+      languagesLabel: 'Languages',
+    },
+    projects: {
+      kicker: 'Projects',
+      title: 'Code I can show',
+      viewProfile: 'GitHub profile',
+      note: '// repository links coming soon',
+    },
+    contact: {
+      kicker: 'Contact',
+      title: "Let's talk about your team",
+      body: 'Open to systems analysis and full-stack engineering roles. The fastest way to reach me is Telegram or email.',
+      telegram: 'Telegram',
+      github: 'GitHub',
+      email: 'Email',
+      phone: 'Phone',
+      preferPdf: 'Prefer a PDF?',
+    },
+    footer: {
+      backToTop: 'Back to top',
+    },
+  },
+  roles: {
+    analyst: {
+      id: 'analyst',
+      navLabel: 'Systems Analyst',
+      heroTitle: 'Systems Analyst',
+      tagline:
+        'I turn messy business processes into requirements, workflows, and specs that stick.',
+      accent: '#5b7cfa',
+      accent2: '#8f6ffb',
+      about:
+        "I specialize in eliciting and formalizing requirements, writing technical specifications, and documenting business-process regulations. Over two years I've built a reliable process for diving into complex, ambiguous business processes and turning them into clear rules — from internal regulations to full technical specs.",
+      stats: [
+        { value: '90+', label: 'requirements captured' },
+        { value: '500+', label: 'employees on my workflow' },
+        { value: '5+', label: 'regulations authored' },
+      ],
+      highlights: [
+        'Mapped the complete Directum document workflow end-to-end, company-wide',
+        'Overhauled procurement approval routes in Bitrix24 with Procurement and Information Security',
+        'Authored 5+ business-process regulations for the company and individual departments',
+      ],
+      experience: {
+        title: 'Software Engineer',
+        company: 'JSC Research Institute "Polyus" named after M.F. Stelmakh',
+        companyNote: 'Part of Shvabe Holding, Rostec State Corporation',
+        period: 'Aug 2024 – Present',
+        summary:
+          "One of Russia's leading developers of laser and quantum-electronic technology. I'm responsible for integrating new document-management systems and supporting and extending the company's Directum and Bitrix24 platforms.",
+        bullets: [
+          'Conducted 50+ meetings with department stakeholders and Directum developers, capturing 90+ requirements (70 pre-launch, 20 post-launch) — ensured complete functional coverage for the entire company.',
+          'Mapped and formalized the full electronic document-workflow cycle in Directum company-wide: designed approval processes and document cards for 6 document types — the new interface cut onboarding time for new hires and reduced paper-based workflow.',
+          'Overhauled the procurement document approval route in Bitrix24 together with Procurement and Information Security: built a 10-stage process with conditions and checks at every step, now used by 500+ employees.',
+          'Wrote a regulation for handling cost-calculation materials from scratch, creating a unified approval standard for ~50 employees who previously worked without clear rules.',
+          "Drove the registry office's move to paperless workflow — memos, orders, directives, and powers of attorney all shifted into Directum, eliminating paper record-keeping.",
+          'Gathered requirements from 7 departments and 2 deputy general directors, then mapped the end-to-end business process for a unified production request, handed off for development on the 1C:ERP platform across all manufacturing divisions.',
+          "Led functional testing during the Directum rollout: logged bugs, produced test documentation, and reported findings directly to the vendor's developers.",
+          'Wrote User Stories and Use Cases to describe user scenarios alongside classic technical specifications.',
+          'Designed dynamic and static business-process diagrams to present solutions to management and brief developers on tasks.',
+        ],
+      },
+      stack: ['SQL', 'JSON', 'PostgreSQL', 'Python', 'UML', 'XML', 'BPMN', 'REST API'],
+      keySkills: [
+        'Requirements gathering & formalization, business-process description',
+        'Technical specifications & documentation, writing internal regulations',
+        'Stack: SQL, JSON, Python, REST API',
+        'BPMN, UML, data visualization',
+        'Stakeholder management',
+        'Strong communication & negotiation skills',
+      ],
+      resumeFile: '/resume/Dmitry-Marakulin-Systems-Analyst-CV.pdf',
+      resumeLabel: 'Systems Analyst CV',
+    },
+    fullstack: {
+      id: 'fullstack',
+      navLabel: 'Full-Stack Developer',
+      heroTitle: 'Full-Stack Developer',
+      tagline: 'I build and automate the enterprise systems that keep a business running.',
+      accent: '#14b8a6',
+      accent2: '#22d3ee',
+      about:
+        "I'm a developer with hands-on enterprise experience — extending and automating production systems in C#, PHP, and Python. I work directly with the platforms a business depends on: Directum, Bitrix24, and Active Directory.",
+      stats: [
+        { value: '4+', label: 'production systems integrated' },
+        { value: '2', label: 'sync engines built solo' },
+        { value: '1', label: 'in-house platform shipped' },
+      ],
+      highlights: [
+        'Built a C# sync module that automated employee creation via LDAP without admin involvement',
+        'Delivered PHP-based procurement analytics reports in Bitrix24 with XLSX export',
+        'Wrote a Python app syncing 1C and Active Directory via LDAP from 1C exports',
+      ],
+      experience: {
+        title: 'Software Engineer',
+        company: 'JSC Research Institute "Polyus" named after M.F. Stelmakh',
+        companyNote: 'Part of Shvabe Holding, Rostec State Corporation',
+        period: 'Aug 2024 – Present',
+        summary:
+          "I'm responsible for developing, extending, and automating the corporate Directum and Bitrix24 systems, and integrating the company's internal systems.",
+        bullets: [
+          'Built a C# module for automatic Directum–Active Directory synchronization: pulls data over LDAP daily, parses attributes, and creates employee records in Directum — plus a manual trigger via an internal system task.',
+          'Implemented PHP-based procurement analytics reporting in Bitrix24: filterable by department, employee, purchase type, and approval stage, with per-stage time tracking, exported to XLSX.',
+          'Built a Python script syncing data between 1C and Active Directory: LDAP connection, parsing of 1C XLS exports, attribute matching, automatic account updates and creation.',
+          "Built custom document cards in Directum Development Studio for cost-calculation materials and the unified production request, inheriting from the system's built-in tasks.",
+          'Implemented no-code form customizations in Bitrix24: custom fields surfaced on forms and read into approval business processes.',
+          'Built an automatic sync scheduler on Windows Task Scheduler — implemented and currently in internal review before going live.',
+          'Co-built TeamSpace, a team web platform on Node.js + Express: task management with multiple assignees, a built-in knowledge base with Markdown support and article versioning, session-based auth, and full action logging — an in-house replacement for third-party ITSM tools.',
+        ],
+      },
+      stack: [
+        'C#',
+        'PHP',
+        'Python',
+        'Node.js',
+        'JavaScript',
+        'HTML',
+        'CSS',
+        'PostgreSQL',
+        'SQL',
+        'REST API',
+        'LDAP',
+        'Git',
+        'Directum',
+        'Bitrix24',
+        '1C',
+        'Active Directory',
+      ],
+      keySkills: [
+        'Development in C#, PHP, Python, Node.js',
+        'Backend logic & automation',
+        'Active Directory (LDAP) integration',
+        'SQL, PostgreSQL',
+        'Directum Development Studio',
+        'REST API, Git, JavaScript',
+      ],
+      resumeFile: '/resume/Dmitry-Marakulin-FullStack-Developer-CV.pdf',
+      resumeLabel: 'Full-Stack Developer CV',
+    },
+  },
+};
