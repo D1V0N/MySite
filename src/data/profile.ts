@@ -7,5 +7,5 @@ export const profile = {
   githubHandle: 'github.com/D1V0N',
   githubHref: 'https://github.com/D1V0N',
   email: 'marakulin.work@gmail.com',
-  emailHref: '#',
+  emailHref: 'mailto:marakulin.work@gmail.com',
 };
