@@ -6,6 +6,6 @@ export const profile = {
   telegramHref: 'https://t.me/marakulinda',
   githubHandle: 'github.com/D1V0N',
   githubHref: 'https://github.com/D1V0N',
-  email: 'you@example.com',
+  email: 'marakulin.work@gmail.com',
   emailHref: '#',
 };
