@@ -153,7 +153,7 @@ export const en: SiteContent = {
         'Stakeholder management',
         'Strong communication & negotiation skills',
       ],
-      resumeFile: '/resume/Dmitry-Marakulin-Systems-Analyst-CV.pdf',
+      resumeFile: '/resume/Dmitry-Marakulin-Systems-Analyst-CV-EN.pdf',
       resumeLabel: 'Systems Analyst CV',
     },
     fullstack: {
@@ -218,7 +218,7 @@ export const en: SiteContent = {
         'Directum Development Studio',
         'REST API, Git, JavaScript',
       ],
-      resumeFile: '/resume/Dmitry-Marakulin-FullStack-Developer-CV.pdf',
+      resumeFile: '/resume/Dmitry-Marakulin-FullStack-Developer-CV-EN.pdf',
       resumeLabel: 'Full-Stack Developer CV',
     },
   },
