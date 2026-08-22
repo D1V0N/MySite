@@ -1,4 +1,4 @@
-export type RoleId = 'analyst' | 'fullstack';
+export type RoleId = 'analyst' | 'fullstack' | 'sysadmin';
 export type Lang = 'en' | 'ru';
 
 export interface Stat {

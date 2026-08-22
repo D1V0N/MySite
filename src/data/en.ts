@@ -111,8 +111,8 @@ export const en: SiteContent = {
       heroTitle: 'Systems Analyst',
       tagline:
         'I turn messy business processes into requirements, workflows, and specs that stick.',
-      accent: '#5b7cfa',
-      accent2: '#8f6ffb',
+      accent: '#f59e0b',
+      accent2: '#fb923c',
       about:
         "I specialize in eliciting and formalizing requirements, writing technical specifications, and documenting business-process regulations. Over two years I've built a reliable process for diving into complex, ambiguous business processes and turning them into clear rules — from internal regulations to full technical specs.",
       stats: [
@@ -161,8 +161,8 @@ export const en: SiteContent = {
       navLabel: 'Full-Stack Developer',
       heroTitle: 'Full-Stack Developer',
       tagline: 'I build and automate the enterprise systems that keep a business running.',
-      accent: '#14b8a6',
-      accent2: '#22d3ee',
+      accent: '#5b7cfa',
+      accent2: '#8f6ffb',
       about:
         "I'm a developer with hands-on enterprise experience — extending and automating production systems in C#, PHP, and Python. I work directly with the platforms a business depends on: Directum, Bitrix24, and Active Directory.",
       stats: [
@@ -220,6 +220,72 @@ export const en: SiteContent = {
       ],
       resumeFile: '/resume/Dmitry-Marakulin-FullStack-Developer-CV-EN.pdf',
       resumeLabel: 'Full-Stack Developer CV',
+    },
+    sysadmin: {
+      id: 'sysadmin',
+      navLabel: 'System Administrator',
+      heroTitle: 'System Administrator',
+      tagline:
+        'I administer user accounts and automate routine tasks with scripts, so systems keep running without manual intervention.',
+      accent: '#14b8a6',
+      accent2: '#22d3ee',
+      about:
+        "I support enterprise IT systems. Two years working with the company's production systems — Active Directory, Directum, Bitrix24, and 1C integrations. I administer user accounts, automate routine tasks with scripts, support users, and maintain technical documentation.",
+      stats: [
+        { value: '2 years', label: 'working with production systems' },
+        { value: '500+', label: 'employees on approval workflows' },
+        { value: '5+', label: 'regulations & guides authored' },
+      ],
+      highlights: [
+        'Automated account creation and updates over LDAP (AD ↔ Directum, 1C ↔ AD) — accounts are provisioned without manual admin involvement',
+        "Drove the registry office's move to paperless workflow through Directum",
+        'Authored 5+ regulations and guides; support approval workflows used by 500+ employees',
+      ],
+      experience: {
+        title: 'Software Engineer',
+        company: 'JSC Research Institute "Polyus" named after M.F. Stelmakh',
+        companyNote: 'Part of Shvabe Holding, Rostec State Corporation',
+        period: 'Aug 2024 – Aug 2026',
+        summary:
+          "I'm responsible for developing, extending, and automating the corporate Directum and Bitrix24 systems, and integrating the company's internal systems.",
+        bullets: [
+          'Administer Active Directory accounts: automated daily user creation and updates over LDAP — employee accounts are provisioned without manual admin involvement.',
+          'Wrote a Python script syncing data between 1C and Active Directory: LDAP connection, processing 1C exports, attribute matching, automatic account creation and updates.',
+          'Set up automatic sync jobs via Windows Task Scheduler, with a manual trigger for off-schedule updates.',
+          'Support the Directum and Bitrix24 document-management systems: user support, document card setup, form fields, and approval routes — used by 500+ employees.',
+          'Took part in the Directum rollout: ran testing, logged bugs and reported them to the vendor, helped employees learn the new interface.',
+          'Prepare analytical reports from corporate systems, exported to XLSX for management.',
+          'Maintain technical documentation: authored 5+ regulations and guides for employees working with these systems.',
+        ],
+      },
+      stack: [
+        'C#',
+        'PHP',
+        'Python',
+        'Node.js',
+        'JavaScript',
+        'HTML',
+        'CSS',
+        'PostgreSQL',
+        'SQL',
+        'REST API',
+        'LDAP',
+        'Git',
+        'Directum',
+        'Bitrix24',
+        '1C',
+        'Active Directory',
+      ],
+      keySkills: [
+        'Active Directory, LDAP — account management, automation',
+        'Windows Task Scheduler, automation scripting in Python',
+        'SQL, PostgreSQL — queries, data exports',
+        'Directum, Bitrix24, 1C — support, integrations, exports',
+        'REST API, Git',
+        'User support, employee training, technical documentation',
+      ],
+      resumeFile: '/resume/Dmitry-Marakulin-System-Administrator-CV-EN.pdf',
+      resumeLabel: 'System Administrator CV',
     },
   },
 };

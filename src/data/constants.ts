@@ -1,3 +1,3 @@
 import type { RoleId } from './types';
 
-export const roleOrder: RoleId[] = ['analyst', 'fullstack'];
+export const roleOrder: RoleId[] = ['analyst', 'fullstack', 'sysadmin'];
