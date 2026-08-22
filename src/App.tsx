@@ -17,10 +17,22 @@ import Projects from './components/Projects';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 
+function getInitialRole(): RoleId {
+  const fromUrl = new URLSearchParams(window.location.search).get('role');
+  return roleOrder.includes(fromUrl as RoleId) ? (fromUrl as RoleId) : roleOrder[0];
+}
+
 function Site() {
-  const [activeRole, setActiveRole] = useState<RoleId>(roleOrder[0]);
+  const [activeRole, setActiveRole] = useState<RoleId>(getInitialRole);
   const { t } = useSiteContent();
   const role = t.roles[activeRole];
+
+  const handleChangeRole = (id: RoleId) => {
+    setActiveRole(id);
+    const url = new URL(window.location.href);
+    url.searchParams.set('role', id);
+    window.history.replaceState({}, '', url);
+  };
 
   useEffect(() => {
     document.title = t.ui.meta.title;
@@ -40,7 +52,7 @@ function Site() {
       <CursorSpotlight />
       <Header />
       <main>
-        <Hero role={role} activeRole={activeRole} onChangeRole={setActiveRole} />
+        <Hero role={role} activeRole={activeRole} onChangeRole={handleChangeRole} />
         <About role={role} />
         <Highlights role={role} />
         <Experience role={role} />
